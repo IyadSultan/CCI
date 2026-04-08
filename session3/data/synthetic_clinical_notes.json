@@ -1,0 +1,205 @@
+[
+  {
+    "note_id": "NOTE_001",
+    "note_type": "Consultation Note",
+    "text": "Patient: Layla Al-Masri, MRN: KH-20241087. Date: 2024-09-15. Referred by Dr. Faris Haddad, Department of General Surgery, KHCC. This 52-year-old female presents for oncology consultation following left breast lumpectomy performed on 2024-09-02. Pathology confirmed invasive ductal carcinoma, grade 2, measuring 2.8 cm. Sentinel lymph node biopsy revealed metastasis in 1 of 3 nodes. ER positive (90%), PR positive (75%), HER2 negative (IHC 1+). Clinical staging: T2N1M0 (Stage IIB). CT chest/abdomen/pelvis showed no distant metastasis. Plan: Adjuvant chemotherapy with dose-dense AC-T protocol: Doxorubicin 60 mg/m2 IV plus Cyclophosphamide 600 mg/m2 IV every 2 weeks for 4 cycles, followed by Paclitaxel 175 mg/m2 IV every 2 weeks for 4 cycles. Start Tamoxifen 20 mg PO daily after completion of chemotherapy. NKDA. Follow-up in 2 weeks for first cycle. Discussed risks and benefits. Patient consents to treatment. Dr. Nadia Qasem, Medical Oncology, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Layla Al-Masri",
+      "mrn": "KH-20241087",
+      "diagnosis": "Invasive ductal carcinoma, left breast",
+      "stage": "T2N1M0 (Stage IIB)",
+      "medications": [
+        {"name": "Doxorubicin", "dose": "60 mg/m2 IV", "frequency": "every 2 weeks"},
+        {"name": "Cyclophosphamide", "dose": "600 mg/m2 IV", "frequency": "every 2 weeks"},
+        {"name": "Paclitaxel", "dose": "175 mg/m2 IV", "frequency": "every 2 weeks"},
+        {"name": "Tamoxifen", "dose": "20 mg PO", "frequency": "daily"}
+      ],
+      "allergies": ["NKDA"],
+      "procedures": ["Left breast lumpectomy", "Sentinel lymph node biopsy"],
+      "follow_up_date": "2024-09-29",
+      "key_findings": ["ER positive 90%", "PR positive 75%", "HER2 negative", "1 of 3 sentinel nodes positive", "No distant metastasis on CT"]
+    }
+  },
+  {
+    "note_id": "NOTE_002",
+    "note_type": "Discharge Summary",
+    "text": "Discharge Summary — KHCC Ward 4B. Patient: Omar Khalil Zarqa, MRN: KH-20230654. DOB: 1968-03-22. Admission: 2024-08-10, Discharge: 2024-08-17. Attending: Dr. Rami Suleiman, Surgical Oncology. Diagnosis: Adenocarcinoma of the sigmoid colon, moderately differentiated. The patient underwent laparoscopic anterior resection on 2024-08-11. Pathology: pT3N2aM0 (5 of 18 lymph nodes positive), Stage IIIC. Margins negative. Postoperative course was uncomplicated. Patient tolerated regular diet by POD 3. Stoma output adequate. Discharge medications: Metoclopramide 10 mg PO TID, Paracetamol 1000 mg PO Q6H PRN, Enoxaparin 40 mg SC daily for 14 days. Allergies: Penicillin (rash), Sulfa drugs (anaphylaxis). Oncology referral placed for adjuvant FOLFOX chemotherapy. Follow-up: Surgical clinic in 10 days (2024-08-27), Oncology consult within 4 weeks. Patient educated on wound care and stoma management.",
+    "expected_extraction": {
+      "patient_name": "Omar Khalil Zarqa",
+      "mrn": "KH-20230654",
+      "diagnosis": "Adenocarcinoma of the sigmoid colon, moderately differentiated",
+      "stage": "pT3N2aM0 (Stage IIIC)",
+      "medications": [
+        {"name": "Metoclopramide", "dose": "10 mg PO", "frequency": "three times daily"},
+        {"name": "Paracetamol", "dose": "1000 mg PO", "frequency": "every 6 hours as needed"},
+        {"name": "Enoxaparin", "dose": "40 mg SC", "frequency": "daily for 14 days"}
+      ],
+      "allergies": ["Penicillin (rash)", "Sulfa drugs (anaphylaxis)"],
+      "procedures": ["Laparoscopic anterior resection"],
+      "follow_up_date": "2024-08-27",
+      "key_findings": ["5 of 18 lymph nodes positive", "Margins negative", "Uncomplicated postoperative course", "Referral for adjuvant FOLFOX"]
+    }
+  },
+  {
+    "note_id": "NOTE_003",
+    "note_type": "Pathology Report",
+    "text": "KHCC Department of Pathology. Case No: SP-2024-09832. Patient: Hana Bisharat, MRN: KH-20240291. Specimen received: 2024-10-03. Specimen: Right upper lobe lobectomy. GROSS DESCRIPTION: Right upper lobe measuring 14 x 10 x 5 cm. A firm, tan-white mass measuring 3.5 x 3.0 x 2.8 cm is identified in the peripheral parenchyma, 0.5 cm from the visceral pleura. MICROSCOPIC DESCRIPTION: Sections show moderately differentiated adenocarcinoma, predominantly acinar pattern, with focal lepidic growth. Visceral pleural invasion is present (PL1). Lymphovascular invasion identified. Perineural invasion not identified. Bronchial margin: negative. Vascular margin: negative. Lymph nodes: 0 of 12 positive for metastasis. IMMUNOHISTOCHEMISTRY: TTF-1 positive, Napsin A positive, CK7 positive, CK20 negative, PD-L1 TPS 45%. MOLECULAR: EGFR exon 19 deletion detected. ALK rearrangement negative. FINAL DIAGNOSIS: Right upper lobe — Adenocarcinoma, moderately differentiated, pT2aN0M0, Stage IB. Pathologist: Dr. Samar Abukhader.",
+    "expected_extraction": {
+      "patient_name": "Hana Bisharat",
+      "mrn": "KH-20240291",
+      "diagnosis": "Adenocarcinoma of the right upper lobe, moderately differentiated",
+      "stage": "pT2aN0M0 (Stage IB)",
+      "medications": [],
+      "allergies": [],
+      "procedures": ["Right upper lobe lobectomy"],
+      "follow_up_date": null,
+      "key_findings": ["Visceral pleural invasion PL1", "Lymphovascular invasion present", "0 of 12 nodes positive", "PD-L1 TPS 45%", "EGFR exon 19 deletion detected", "ALK rearrangement negative", "TTF-1 positive"]
+    }
+  },
+  {
+    "note_id": "NOTE_004",
+    "note_type": "Progress Note",
+    "text": "Progress note — KHCC Day Hospital. Pt: Tariq Awad, MRN KH-20231445. 2024-10-10. 67 yo M w/ dx AML (FAB M4), s/p induction w/ 7+3 (cytarabine/daunorubicin) cycle 1 completed 2024-09-20. Day +20. Pt c/o fatigue, mild oral mucositis, no fever. Labs today: WBC 0.8, ANC 0.3, Hgb 7.2, Plt 18. BMP wnl. Still pancytopenic, ANC <0.5 — remains neutropenic. Tx: Filgrastim 300 mcg SC daily, Fluconazole 200 mg PO daily (prophylaxis), Acyclovir 400 mg PO BID (prophylaxis). Transfuse 1u PRBC today, plt transfusion if bleeding. Allergies: ibuprofen (GI bleed). Continue current abx ppx. Pt tolerating tx well overall. Will reassess CBC in 3d. Next appt 2024-10-13. — Dr. M. Khatib, Hematology, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Tariq Awad",
+      "mrn": "KH-20231445",
+      "diagnosis": "Acute myeloid leukemia (AML), FAB M4",
+      "stage": null,
+      "medications": [
+        {"name": "Filgrastim", "dose": "300 mcg SC", "frequency": "daily"},
+        {"name": "Fluconazole", "dose": "200 mg PO", "frequency": "daily"},
+        {"name": "Acyclovir", "dose": "400 mg PO", "frequency": "twice daily"}
+      ],
+      "allergies": ["Ibuprofen (GI bleed)"],
+      "procedures": ["PRBC transfusion"],
+      "follow_up_date": "2024-10-13",
+      "key_findings": ["Day +20 post induction", "ANC 0.3 (neutropenic)", "Hemoglobin 7.2", "Platelets 18", "Mild oral mucositis", "Tolerating treatment well"]
+    }
+  },
+  {
+    "note_id": "NOTE_005",
+    "note_type": "Clinic Visit",
+    "text": "KHCC Pediatric Oncology Clinic. Date: 2024-11-05. Patient: Yazan Ahmad Tamimi, MRN: KH-20240833. DOB: 2017-06-14. Age: 7 years. Accompanied by mother. Diagnosis: Pre-B cell acute lymphoblastic leukemia (ALL), standard risk, diagnosed 2024-06-10. Currently in maintenance phase of AALL0932 protocol. Current medications: 6-Mercaptopurine 50 mg/m2 PO daily (taking 37.5 mg nightly), Methotrexate 20 mg/m2 PO weekly (taking 15 mg every Friday), Vincristine 1.5 mg/m2 IV monthly (last dose 2024-10-08), Dexamethasone 6 mg/m2 PO daily x5 days monthly (next pulse due 2024-11-10). Weight: 24 kg, Height: 122 cm, BSA: 0.89 m2. Vitals stable. Exam: No lymphadenopathy, no hepatosplenomegaly, mild cushingoid facies. CBC: WBC 3.2, ANC 1.8, Hgb 11.4, Plt 210. LFTs normal. NKDA. Assessment: Tolerating maintenance well. Counts adequate. Plan: Continue current doses. Return in 4 weeks (2024-12-03) for Vincristine and labs. Mother counseled on infection precautions. Dr. Rana Abu-Ghosh, Pediatric Oncology, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Yazan Ahmad Tamimi",
+      "mrn": "KH-20240833",
+      "diagnosis": "Pre-B cell acute lymphoblastic leukemia (ALL), standard risk",
+      "stage": null,
+      "medications": [
+        {"name": "6-Mercaptopurine", "dose": "37.5 mg PO", "frequency": "daily"},
+        {"name": "Methotrexate", "dose": "15 mg PO", "frequency": "weekly"},
+        {"name": "Vincristine", "dose": "1.5 mg/m2 IV", "frequency": "monthly"},
+        {"name": "Dexamethasone", "dose": "6 mg/m2 PO", "frequency": "daily x5 days monthly"}
+      ],
+      "allergies": ["NKDA"],
+      "procedures": [],
+      "follow_up_date": "2024-12-03",
+      "key_findings": ["Maintenance phase AALL0932 protocol", "ANC 1.8 (adequate)", "Mild cushingoid facies", "No lymphadenopathy", "No hepatosplenomegaly", "LFTs normal"]
+    }
+  },
+  {
+    "note_id": "NOTE_006",
+    "note_type": "Consultation Note",
+    "text": "Oncology Consultation — KHCC. Patient: Reem Sami Al-Khatib. MRN: KH-20241203. Date: 2024-10-22. Referred from Queen Alia Military Hospital. Hx: 45 yo F, never smoker, presented with progressive dyspnea and cough x 3 months. CT chest showed 4.2 cm RUL mass with mediastinal lymphadenopathy. Bronchoscopy with biopsy performed at referring hospital confirmed non-small cell lung cancer, adenocarcinoma. PET/CT: FDG-avid RUL mass, bilateral mediastinal and hilar nodes (stations 4R, 7, 10R), no distant mets. Brain MRI negative. Staging: cT2aN2M0, Stage IIIA. Molecular testing pending (sent to KHCC molecular lab). Plan: Await molecular results (EGFR, ALK, ROS1, PD-L1). If no actionable mutation, proceed with concurrent chemoradiation: Cisplatin 50 mg/m2 IV days 1, 8, 29, 36 plus Etoposide 50 mg/m2 IV days 1-5, 29-33, with concurrent thoracic radiation 60 Gy in 30 fractions. If EGFR/ALK positive, consider targeted therapy. Allergy: Codeine (nausea/vomiting). Follow-up: 2024-11-01 for molecular results. Dr. Issa Mahmoud, Thoracic Oncology, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Reem Sami Al-Khatib",
+      "mrn": "KH-20241203",
+      "diagnosis": "Non-small cell lung cancer, adenocarcinoma, right upper lobe",
+      "stage": "cT2aN2M0 (Stage IIIA)",
+      "medications": [
+        {"name": "Cisplatin", "dose": "50 mg/m2 IV", "frequency": "days 1, 8, 29, 36"},
+        {"name": "Etoposide", "dose": "50 mg/m2 IV", "frequency": "days 1-5, 29-33"}
+      ],
+      "allergies": ["Codeine (nausea/vomiting)"],
+      "procedures": ["Bronchoscopy with biopsy", "PET/CT", "Brain MRI"],
+      "follow_up_date": "2024-11-01",
+      "key_findings": ["4.2 cm RUL mass", "Bilateral mediastinal and hilar lymphadenopathy", "No distant metastasis", "Brain MRI negative", "Molecular testing pending", "Never smoker"]
+    }
+  },
+  {
+    "note_id": "NOTE_007",
+    "note_type": "Progress Note",
+    "text": "KHCC Lymphoma Clinic. 2024-09-30. Samer Fakhouri, KH-20230198. 34M. Dx: Classical Hodgkin lymphoma, nodular sclerosis subtype, Stage IVB (dx 2024-07-15). Bulky mediastinal dz, splenic involvement, B symptoms (fevers, night sweats, 12% weight loss). Completed ABVD cycle 2 on 2024-09-16. Today cycle 3 day 1. Sx review: persistent fatigue, nausea improved with ondansetron, no neuropathy, no pulmonary sx. ECOG 1. PE: cervical LAD improved, no new findings. Labs: WBC 5.1, ANC 2.4, Hgb 10.8, Plt 195, LDH 280 (down from 520 at dx). Interim PET scheduled 2024-10-14. Meds today: Doxorubicin 25 mg/m2 IV, Bleomycin 10 units/m2 IV, Vinblastine 6 mg/m2 IV, Dacarbazine 375 mg/m2 IV. Supportive: Ondansetron 8 mg IV pre-chemo, Dexamethasone 8 mg IV pre-chemo. Allergies: none known. Plan: Administer ABVD cycle 3. Interim PET in 2 wks. If Deauville 1-3 continue ABVD x6 total. If Deauville 4-5 escalate to BEACOPP. f/u 2024-10-14. Dr. L. Barakat, Hematology-Oncology.",
+    "expected_extraction": {
+      "patient_name": "Samer Fakhouri",
+      "mrn": "KH-20230198",
+      "diagnosis": "Classical Hodgkin lymphoma, nodular sclerosis subtype",
+      "stage": "Stage IVB",
+      "medications": [
+        {"name": "Doxorubicin", "dose": "25 mg/m2 IV", "frequency": "cycle day 1"},
+        {"name": "Bleomycin", "dose": "10 units/m2 IV", "frequency": "cycle day 1"},
+        {"name": "Vinblastine", "dose": "6 mg/m2 IV", "frequency": "cycle day 1"},
+        {"name": "Dacarbazine", "dose": "375 mg/m2 IV", "frequency": "cycle day 1"},
+        {"name": "Ondansetron", "dose": "8 mg IV", "frequency": "pre-chemo"},
+        {"name": "Dexamethasone", "dose": "8 mg IV", "frequency": "pre-chemo"}
+      ],
+      "allergies": [],
+      "procedures": [],
+      "follow_up_date": "2024-10-14",
+      "key_findings": ["Bulky mediastinal disease", "Splenic involvement", "B symptoms present", "LDH trending down (280 from 520)", "Cervical LAD improved", "ECOG 1", "Interim PET scheduled"]
+    }
+  },
+  {
+    "note_id": "NOTE_008",
+    "note_type": "Discharge Summary",
+    "text": "Discharge Summary. KHCC BMT Unit. Pt: Dina Mahmoud Obeidat. MRN KH-20220987. 28F. Admitted 2024-08-25, discharged 2024-09-22. Dx: Relapsed diffuse large B-cell lymphoma (DLBCL), s/p autologous stem cell transplant. Conditioning: BEAM (BCNU 300 mg/m2 d-6, Etoposide 200 mg/m2 d-5 to d-2, Cytarabine 200 mg/m2 BID d-5 to d-2, Melphalan 140 mg/m2 d-1). Stem cell infusion 2024-09-01 (day 0). Engraftment: ANC >500 on day +12, platelets >20k on day +16. Complications: febrile neutropenia day +5 treated w/ meropenem, resolved. Mucositis grade 2, managed w/ morphine PCA. No VOD, no engraftment syndrome. Discharge meds: Fluconazole 400 mg PO daily, Acyclovir 800 mg PO TID, Levofloxacin 500 mg PO daily, Ursodiol 300 mg PO BID. Allergies: Vancomycin (Red Man Syndrome). f/u BMT clinic 2024-09-29. Discussed signs of infection, when to return to ER. — Dr. Ahmad Jarrar, BMT Program, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Dina Mahmoud Obeidat",
+      "mrn": "KH-20220987",
+      "diagnosis": "Relapsed diffuse large B-cell lymphoma (DLBCL)",
+      "stage": null,
+      "medications": [
+        {"name": "Fluconazole", "dose": "400 mg PO", "frequency": "daily"},
+        {"name": "Acyclovir", "dose": "800 mg PO", "frequency": "three times daily"},
+        {"name": "Levofloxacin", "dose": "500 mg PO", "frequency": "daily"},
+        {"name": "Ursodiol", "dose": "300 mg PO", "frequency": "twice daily"}
+      ],
+      "allergies": ["Vancomycin (Red Man Syndrome)"],
+      "procedures": ["Autologous stem cell transplant", "BEAM conditioning"],
+      "follow_up_date": "2024-09-29",
+      "key_findings": ["Engraftment ANC >500 on day +12", "Platelets >20k on day +16", "Febrile neutropenia day +5 (resolved)", "Mucositis grade 2", "No VOD", "No engraftment syndrome"]
+    }
+  },
+  {
+    "note_id": "NOTE_009",
+    "note_type": "Clinic Visit",
+    "text": "KHCC Breast Cancer Clinic. 2024-11-12. Pt: Maha Nabil Issa, KH-20241550. 39F. New patient. Referred by Dr. Yousef Bataineh, Al-Bashir Hospital. Hx: Felt lump in R breast 2 months ago. US + mammo showed 2.1 cm irregular mass at 2 o'clock, 5 cm from nipple. Core bx done at referring hospital — results not available, slides requested for review at KHCC. Patient also reports R axillary fullness. No weight loss, no bone pain, no SOB. PMH: hypothyroidism on Levothyroxine 75 mcg daily, GERD on Omeprazole 20 mg daily. Allergies: Aspirin (urticaria), Shellfish. FH: Mother dx breast ca age 55, maternal aunt ovarian ca age 48 — will refer to genetic counseling for BRCA testing. PE: 2 cm firm mass R breast upper outer quadrant, mobile. 1.5 cm firm R axillary node. Plan: 1) Request outside pathology slides for KHCC review 2) Bilateral breast MRI 3) R axillary US with FNA of suspicious node 4) Genetic counseling referral. Return in 1 week with results. Next appt: 2024-11-19. Dr. Lina Mansour, Breast Oncology, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Maha Nabil Issa",
+      "mrn": "KH-20241550",
+      "diagnosis": "Suspicious right breast mass, pending pathology review",
+      "stage": null,
+      "medications": [
+        {"name": "Levothyroxine", "dose": "75 mcg", "frequency": "daily"},
+        {"name": "Omeprazole", "dose": "20 mg", "frequency": "daily"}
+      ],
+      "allergies": ["Aspirin (urticaria)", "Shellfish"],
+      "procedures": ["Core biopsy (at referring hospital)", "Bilateral breast MRI (planned)", "Right axillary US with FNA (planned)"],
+      "follow_up_date": "2024-11-19",
+      "key_findings": ["2.1 cm irregular mass right breast at 2 o'clock", "Right axillary fullness", "1.5 cm right axillary node", "Family history: mother breast cancer age 55, maternal aunt ovarian cancer age 48", "BRCA testing referral planned"]
+    }
+  },
+  {
+    "note_id": "NOTE_010",
+    "note_type": "Progress Note",
+    "text": "KHCC Med Onc. 2024-10-28. Khaled R. Masarweh, KH-20231877. 58M. Metastatic colorectal ca (sigmoid), KRAS G12D mutant, dx 2023-11-20. Liver mets (segments 5, 6, 8), lung mets (bilateral sub-cm nodules). Currently on FOLFIRI + Bevacizumab, completed cycle 8 today. Prior tx: FOLFOX x6 cycles (stopped due to grade 3 neuropathy 2024-05). Today's regimen: Irinotecan 180 mg/m2 IV over 90 min, Leucovorin 400 mg/m2 IV over 2h, 5-FU 400 mg/m2 IV bolus then 2400 mg/m2 IV over 46h via pump, Bevacizumab 5 mg/kg IV over 30 min. Recent CT (2024-10-20): partial response per RECIST — liver mets decreased 30%, lung nodules stable. CEA trending down: 85 → 42. Tox: grade 1 diarrhea, managed w/ loperamide PRN. No hand-foot syndrome. HTN controlled w/ Amlodipine 10 mg daily (bev-related). Allergies: PCN (anaphylaxis). Plan: continue FOLFIRI/bev, repeat CT in 4 cycles. Surgical re-eval for liver resection if continued response. f/u 2 wks (2024-11-11). Dr. W. Jaber, GI Oncology, KHCC.",
+    "expected_extraction": {
+      "patient_name": "Khaled R. Masarweh",
+      "mrn": "KH-20231877",
+      "diagnosis": "Metastatic colorectal adenocarcinoma (sigmoid), KRAS G12D mutant",
+      "stage": "Stage IV (liver and lung metastases)",
+      "medications": [
+        {"name": "Irinotecan", "dose": "180 mg/m2 IV", "frequency": "every 2 weeks"},
+        {"name": "Leucovorin", "dose": "400 mg/m2 IV", "frequency": "every 2 weeks"},
+        {"name": "5-Fluorouracil", "dose": "400 mg/m2 IV bolus + 2400 mg/m2 IV over 46h", "frequency": "every 2 weeks"},
+        {"name": "Bevacizumab", "dose": "5 mg/kg IV", "frequency": "every 2 weeks"},
+        {"name": "Amlodipine", "dose": "10 mg PO", "frequency": "daily"},
+        {"name": "Loperamide", "dose": "PRN", "frequency": "as needed"}
+      ],
+      "allergies": ["Penicillin (anaphylaxis)"],
+      "procedures": [],
+      "follow_up_date": "2024-11-11",
+      "key_findings": ["Partial response per RECIST", "Liver mets decreased 30%", "Lung nodules stable", "CEA trending down 85 to 42", "Prior FOLFOX stopped due to grade 3 neuropathy", "Bevacizumab-related HTN controlled", "Surgical re-evaluation for liver resection planned"]
+    }
+  }
+]
