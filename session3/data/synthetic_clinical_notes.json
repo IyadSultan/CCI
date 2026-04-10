@@ -15,6 +15,11 @@
         {"name": "Tamoxifen", "dose": "20 mg PO", "frequency": "daily"}
       ],
       "allergies": ["NKDA"],
+      "potential_interactions": [
+        {"drug1": "Doxorubicin", "drug2": "Paclitaxel", "risk_level": "high", "description": "Sequential use increases cardiotoxicity risk; paclitaxel can elevate doxorubicin plasma levels"},
+        {"drug1": "Doxorubicin", "drug2": "Cyclophosphamide", "risk_level": "moderate", "description": "Additive cardiotoxicity and myelosuppression; cumulative dose monitoring required"},
+        {"drug1": "Tamoxifen", "drug2": "Doxorubicin", "risk_level": "moderate", "description": "Tamoxifen may inhibit doxorubicin metabolism, increasing exposure; given sequentially to avoid overlap"}
+      ],
       "procedures": ["Left breast lumpectomy", "Sentinel lymph node biopsy"],
       "follow_up_date": "2024-09-29",
       "key_findings": ["ER positive 90%", "PR positive 75%", "HER2 negative", "1 of 3 sentinel nodes positive", "No distant metastasis on CT"]
@@ -35,6 +40,9 @@
         {"name": "Enoxaparin", "dose": "40 mg SC", "frequency": "daily for 14 days"}
       ],
       "allergies": ["Penicillin (rash)", "Sulfa drugs (anaphylaxis)"],
+      "potential_interactions": [
+        {"drug1": "Metoclopramide", "drug2": "Paracetamol", "risk_level": "low", "description": "Metoclopramide accelerates gastric emptying and increases paracetamol absorption rate"}
+      ],
       "procedures": ["Laparoscopic anterior resection"],
       "follow_up_date": "2024-08-27",
       "key_findings": ["5 of 18 lymph nodes positive", "Margins negative", "Uncomplicated postoperative course", "Referral for adjuvant FOLFOX"]
@@ -51,6 +59,7 @@
       "stage": "pT2aN0M0 (Stage IB)",
       "medications": [],
       "allergies": [],
+      "potential_interactions": [],
       "procedures": ["Right upper lobe lobectomy"],
       "follow_up_date": null,
       "key_findings": ["Visceral pleural invasion PL1", "Lymphovascular invasion present", "0 of 12 nodes positive", "PD-L1 TPS 45%", "EGFR exon 19 deletion detected", "ALK rearrangement negative", "TTF-1 positive"]
@@ -71,6 +80,9 @@
         {"name": "Acyclovir", "dose": "400 mg PO", "frequency": "twice daily"}
       ],
       "allergies": ["Ibuprofen (GI bleed)"],
+      "potential_interactions": [
+        {"drug1": "Fluconazole", "drug2": "Acyclovir", "risk_level": "low", "description": "Both renally cleared; concurrent use may increase renal load in dehydrated patients"}
+      ],
       "procedures": ["PRBC transfusion"],
       "follow_up_date": "2024-10-13",
       "key_findings": ["Day +20 post induction", "ANC 0.3 (neutropenic)", "Hemoglobin 7.2", "Platelets 18", "Mild oral mucositis", "Tolerating treatment well"]
@@ -92,6 +104,11 @@
         {"name": "Dexamethasone", "dose": "6 mg/m2 PO", "frequency": "daily x5 days monthly"}
       ],
       "allergies": ["NKDA"],
+      "potential_interactions": [
+        {"drug1": "6-Mercaptopurine", "drug2": "Methotrexate", "risk_level": "high", "description": "Methotrexate inhibits xanthine oxidase, increasing 6-MP levels and toxicity; intentional in ALL protocols but requires dose monitoring"},
+        {"drug1": "Dexamethasone", "drug2": "Methotrexate", "risk_level": "moderate", "description": "Corticosteroids may mask signs of infection during methotrexate-induced immunosuppression"},
+        {"drug1": "Vincristine", "drug2": "6-Mercaptopurine", "risk_level": "moderate", "description": "Additive hepatotoxicity risk; monitor LFTs during concurrent use"}
+      ],
       "procedures": [],
       "follow_up_date": "2024-12-03",
       "key_findings": ["Maintenance phase AALL0932 protocol", "ANC 1.8 (adequate)", "Mild cushingoid facies", "No lymphadenopathy", "No hepatosplenomegaly", "LFTs normal"]
@@ -111,6 +128,9 @@
         {"name": "Etoposide", "dose": "50 mg/m2 IV", "frequency": "days 1-5, 29-33"}
       ],
       "allergies": ["Codeine (nausea/vomiting)"],
+      "potential_interactions": [
+        {"drug1": "Cisplatin", "drug2": "Etoposide", "risk_level": "moderate", "description": "Additive myelosuppression and nephrotoxicity; standard combination but requires renal function monitoring and hydration"}
+      ],
       "procedures": ["Bronchoscopy with biopsy", "PET/CT", "Brain MRI"],
       "follow_up_date": "2024-11-01",
       "key_findings": ["4.2 cm RUL mass", "Bilateral mediastinal and hilar lymphadenopathy", "No distant metastasis", "Brain MRI negative", "Molecular testing pending", "Never smoker"]
@@ -134,6 +154,11 @@
         {"name": "Dexamethasone", "dose": "8 mg IV", "frequency": "pre-chemo"}
       ],
       "allergies": [],
+      "potential_interactions": [
+        {"drug1": "Doxorubicin", "drug2": "Bleomycin", "risk_level": "high", "description": "Additive pulmonary and cardiotoxicity; bleomycin pulmonary function monitoring required alongside doxorubicin cumulative dose tracking"},
+        {"drug1": "Bleomycin", "drug2": "Vinblastine", "risk_level": "moderate", "description": "Vinblastine may decrease bleomycin clearance, increasing pulmonary toxicity risk"},
+        {"drug1": "Doxorubicin", "drug2": "Dacarbazine", "risk_level": "moderate", "description": "Additive hepatotoxicity; monitor LFTs during ABVD cycles"}
+      ],
       "procedures": [],
       "follow_up_date": "2024-10-14",
       "key_findings": ["Bulky mediastinal disease", "Splenic involvement", "B symptoms present", "LDH trending down (280 from 520)", "Cervical LAD improved", "ECOG 1", "Interim PET scheduled"]
@@ -155,6 +180,10 @@
         {"name": "Ursodiol", "dose": "300 mg PO", "frequency": "twice daily"}
       ],
       "allergies": ["Vancomycin (Red Man Syndrome)"],
+      "potential_interactions": [
+        {"drug1": "Fluconazole", "drug2": "Levofloxacin", "risk_level": "high", "description": "Both prolong QT interval; concurrent use increases risk of torsades de pointes — requires ECG monitoring"},
+        {"drug1": "Fluconazole", "drug2": "Acyclovir", "risk_level": "low", "description": "Both renally cleared; monitor renal function, especially post-transplant"}
+      ],
       "procedures": ["Autologous stem cell transplant", "BEAM conditioning"],
       "follow_up_date": "2024-09-29",
       "key_findings": ["Engraftment ANC >500 on day +12", "Platelets >20k on day +16", "Febrile neutropenia day +5 (resolved)", "Mucositis grade 2", "No VOD", "No engraftment syndrome"]
@@ -174,6 +203,9 @@
         {"name": "Omeprazole", "dose": "20 mg", "frequency": "daily"}
       ],
       "allergies": ["Aspirin (urticaria)", "Shellfish"],
+      "potential_interactions": [
+        {"drug1": "Omeprazole", "drug2": "Levothyroxine", "risk_level": "moderate", "description": "PPIs reduce gastric acid, decreasing levothyroxine absorption; take levothyroxine 30-60 min before omeprazole and monitor TSH"}
+      ],
       "procedures": ["Core biopsy (at referring hospital)", "Bilateral breast MRI (planned)", "Right axillary US with FNA (planned)"],
       "follow_up_date": "2024-11-19",
       "key_findings": ["2.1 cm irregular mass right breast at 2 o'clock", "Right axillary fullness", "1.5 cm right axillary node", "Family history: mother breast cancer age 55, maternal aunt ovarian cancer age 48", "BRCA testing referral planned"]
@@ -197,6 +229,11 @@
         {"name": "Loperamide", "dose": "PRN", "frequency": "as needed"}
       ],
       "allergies": ["Penicillin (anaphylaxis)"],
+      "potential_interactions": [
+        {"drug1": "Bevacizumab", "drug2": "Irinotecan", "risk_level": "moderate", "description": "Bevacizumab increases risk of GI perforation when combined with irinotecan; monitor for abdominal pain and signs of perforation"},
+        {"drug1": "Irinotecan", "drug2": "5-Fluorouracil", "risk_level": "moderate", "description": "Additive myelosuppression and severe diarrhea; standard FOLFIRI combination but requires close monitoring of counts and hydration"},
+        {"drug1": "Bevacizumab", "drug2": "Amlodipine", "risk_level": "low", "description": "Bevacizumab causes hypertension; amlodipine is used therapeutically to manage it — monitor blood pressure regularly"}
+      ],
       "procedures": [],
       "follow_up_date": "2024-11-11",
       "key_findings": ["Partial response per RECIST", "Liver mets decreased 30%", "Lung nodules stable", "CEA trending down 85 to 42", "Prior FOLFOX stopped due to grade 3 neuropathy", "Bevacizumab-related HTN controlled", "Surgical re-evaluation for liver resection planned"]
