@@ -1,0 +1,5 @@
+# TODO: Add patterns for files/folders git should ignore.
+# Hint: think about — virtual environments, Python bytecode, secrets,
+#       OS clutter, local databases, data folders, editor configs.
+#
+# Add one pattern per line. Comments start with #.
